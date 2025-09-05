@@ -1,0 +1,59 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f4f6fb;
+	color: #22223b;
+}
+
+/* Primary color palette */
+
+:root {
+	--primary: #7A183A; /* Axis Bank Maroon */
+	--secondary: #F9A825; /* Axis Bank Gold */
+	--accent: #f4f6fb; /* Light background */
+	--background: #f4f6fb;
+	--surface: #fff;
+	--text: #2d2d2d;
+	--border: #e0e0e0;
+	--shadow: 0 2px 8px rgba(122, 24, 58, 0.08);
+}
+
+/* Utility classes */
+.card {
+	background: var(--surface);
+	border-radius: 16px;
+	box-shadow: var(--shadow);
+	padding: 2rem;
+	border: 1px solid var(--border);
+}
+
+.btn {
+	background: var(--primary);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.btn:hover {
+	background: var(--secondary);
+}
+
+.input {
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 0.75rem;
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}

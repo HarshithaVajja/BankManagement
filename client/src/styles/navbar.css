@@ -1,0 +1,51 @@
+.navbar{
+
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0vh;
+    z-index: 10;
+    background-color: rgb(28, 82, 126) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar h3{
+    color: aliceblue;
+}
+
+/* Remove old .navbar rule and enforce gradient background */
+.navbar {
+    width: 100vw;
+    min-height: 70px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: var(--shadow);
+    border-radius: 0 0 18px 18px;
+}
+
+.nav-options {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--surface);
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.nav-link:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}

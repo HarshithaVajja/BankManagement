@@ -1,0 +1,153 @@
+.home-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* User details card */
+.home-user-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: var(--surface);
+  border-left: 8px solid var(--primary);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+/* Body: left + right */
+.home-body {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left container (balance + send money) */
+.home-container1 {
+  flex: 1;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Balance card */
+.balance-container {
+  background: var(--background);
+  border-left: 8px solid var(--primary);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.balance-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 24px;
+}
+.balance-container h4 {
+  margin: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.balance-container p {
+  margin: 0.8rem 0 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+/* Send Money card */
+.send-money-container {
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+.send-money-container h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+.send-money-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.send-money-container form input,
+.send-money-container form select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+}
+.send-money-container form button {
+  background: var(--secondary);
+  color: var(--primary);
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.send-money-container form button:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Right container (transactions) */
+.home-container2 {
+  flex: 2;
+  min-width: 350px;
+}
+.user-transactions-container {
+  background: var(--surface);
+  border-left: 8px solid var(--secondary);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+.user-transactions-container h4 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+.user-transactions-body {
+  max-height: 60vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.user-transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.user-transaction {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  border-left: 6px solid var(--primary);
+}
+.user-transaction span {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.money-sent {
+  border-left-color: var(--primary);
+  background: #fff0f2;
+}
+.money-received {
+  border-left-color: var(--secondary);
+  background: #f4fbe9;
+}

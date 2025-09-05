@@ -1,0 +1,135 @@
+/* Deposits Page Layout */
+.user-deposits-page {
+    padding: 12vh 3vw 3vh 3vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* Left side (Existing Deposits) */
+.user-deposits-container1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-deposits {
+    width: 100%;
+    height: 100%;
+    margin-right: 20%;
+    padding: 3vh 2vw;
+}
+
+.user-deposits h3 {
+    text-align: center;
+    color: rgb(50, 88, 116);
+    margin-bottom: 5vh;
+}
+
+/* Scrollable deposit cards */
+.user-deposits-body {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.user-deposits-body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual deposit card (compact, auto-sized) */
+.user-deposits-body .user-deposit {
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    min-width: 260px;
+    max-width: 320px;
+    border-left: 6px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    height: auto;         /* auto height to fit content */
+    flex: 0 0 auto;       /* prevent stretching */
+}
+
+/* Deposit details layout (label | value) */
+.user-deposits-body .user-deposit span {
+    display: grid;
+    grid-template-columns: 120px auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.user-deposits-body span p {
+    font-size: 0.85rem;
+    margin: 0;
+    color: rgb(34, 182, 152); /* value color */
+}
+.user-deposits-body span p b {
+    font-weight: 500;
+    color: rgb(56, 110, 133); /* label color */
+}
+
+/* Right side (New Deposit Form) */
+.user-deposits-container2 {
+    width: 50%;
+}
+
+.new-user-deposits-container {
+    background: var(--surface);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 2rem 1.5rem;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* Centers form button */
+}
+
+.new-user-deposits-container h3 {
+    text-align: center;
+    color: rgb(41, 95, 118);
+}
+
+.new-user-deposits-container label {
+    color: rgb(47, 77, 90);
+}
+
+.new-user-deposits-container p {
+    text-align: justify;
+    color: rgba(73, 99, 112, 0.763);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Centered Apply button */
+.new-user-deposits-container button {
+    width: 40%;
+    margin: 0;
+}
+
+.input-row {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.input-row .input-row11 {
+    width: 80%;
+}
+.input-row .input-row21 {
+    width: 40%;
+}
+.input-row .input-row22 {
+    width: 60%;
+}

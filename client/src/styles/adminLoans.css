@@ -1,0 +1,142 @@
+.loans-page{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding-top: 13vh;
+}
+
+.loans{
+    width: 60%;
+    height: 85vh;
+    margin-right: 5vw;
+    
+    padding-left: 3vw;
+
+}
+.loans h2{
+
+    color: rgba(50, 89, 116, 0.893);
+    margin-bottom: 5vh;
+}
+
+.loans-body{
+
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+    .loans-body {
+        width: 100%;
+        min-height: 72vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+.loans-body::-webkit-scrollbar {
+    display: none;
+}
+.loans-body .loan{
+
+    background: var(--surface);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 2rem 1.5rem;
+    min-width: 320px;
+    max-width: 400px;
+    flex: 1 1 340px;
+    border-left: 8px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.loans-body .loan span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.loans-body span p {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--text);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.loans-body span p b {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.loans-page{
+    min-height: 100vh;
+    padding-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background);
+}
+
+.loan{
+    display: flex;
+    justify-content: space-between;
+    background: var(--accent);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--secondary);
+
+}
+
+.loan-requests {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.loan-requests::-webkit-scrollbar {
+    display: none;
+}
+
+.loan-request{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(238, 241, 244, 0.753);
+    padding: 2vh 2vw;
+    border-radius: 1rem;
+}
+
+.loan-request p{
+    margin: 0;
+    color: rgb(74, 136, 160);
+}
+
+.loan-request p b{
+    font-weight: 500;
+    color: rgb(72, 111, 126);
+}
+
+.loan-request span{
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+}
