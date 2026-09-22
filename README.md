@@ -1,5 +1,5 @@
 
-## Filled-in version for `BankManagement`
+## `BankManagement`
 
 ```markdown
 # Bank Management System
